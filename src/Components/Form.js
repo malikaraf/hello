@@ -4,14 +4,14 @@ import { useState } from "react";
 export default function Form({ addTodo }) {
   const [todo, setTodo] = useState("");
 
-  const handlesubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     addTodo(todo);
     setTodo("");
   };
   return (
     <div>
-      <form className="TodoForm" onSubmit={handlesubmit}>
+      <form className="TodoForm" onSubmit={handleSubmit}>
         <input
           type="text"
           className="todo-input"
